@@ -1,4 +1,4 @@
-# C Variables Example
+# C - Variables
 
 This C program demonstrates the declaration, initialization, and usage of various data types including integers, floats, characters, and strings. It also shows how to use the `printf` function to output formatted information to the console.
 
