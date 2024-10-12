@@ -104,7 +104,3 @@ The program uses `printf` to display messages. Here's how it works:
 ## Conclusion
 
 This program illustrates how to declare and initialize different variable types in C, along with formatted output using `printf`. Understanding these concepts is essential for programming in C.
-
----
-
-Feel free to modify any part of this README to better suit your needs!
