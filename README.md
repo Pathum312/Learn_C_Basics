@@ -19,6 +19,11 @@ Arithmetic operators perform basic mathematical operations on numeric data types
 ### 1. Addition (`+`)
 - **Description**: Adds two operands.
 - **Example**: `z = x + y;` results in `z` being `7` when `x` is `5` and `y` is `2`.
+- **Code**:
+  ```c
+  z = x + y;
+  printf("%d + %d = %d\n", x, y, z);
+  ```
 
 ### 2. Subtraction (`-`)
 - **Description**: Subtracts the second operand from the first.
