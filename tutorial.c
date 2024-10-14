@@ -16,7 +16,7 @@ int main() {
         printf("\nYou cannot sign up, you are not born yet!");
     }
     else {
-        printf("\nYou cannot signed up for %d more years!", 18 - age);
+        printf("\nYou cannot sign up for another %d years!", 18 - age);
     }
 
     return 0;
