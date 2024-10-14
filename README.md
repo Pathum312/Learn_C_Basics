@@ -18,45 +18,6 @@ This is equivalent to:
 variable = variable operator value;
 ```
 
-## Examples
-
-Below is a code example demonstrating various augmented assignment operators:
-
-```c
-#include <stdio.h>
-
-int main() {
-    int x = 10;
-
-    // Addition
-    x = x + 2;  // Traditional addition
-    x += 2;     // Augmented addition
-    printf("%d\n", x); // Output: 14
-
-    // Subtraction
-    x = x - 2;  // Traditional subtraction
-    x -= 2;     // Augmented subtraction
-    printf("%d\n", x); // Output: 10
-
-    // Multiplication
-    x = x * 2;  // Traditional multiplication
-    x *= 2;     // Augmented multiplication
-    printf("%d\n", x); // Output: 20
-
-    // Division
-    x = x / 2;  // Traditional division
-    x /= 2;     // Augmented division
-    printf("%d\n", x); // Output: 10
-
-    // Modulus
-    x = x % 2;  // Traditional modulus
-    x %= 2;     // Augmented modulus
-    printf("%d\n", x); // Output: 0
-
-    return 0;
-}
-```
-
 ## Explanation of Each Operator
 
 1. **Addition (`+=`)**:
@@ -70,18 +31,42 @@ int main() {
    - `x += 2;` does the same but in a more concise way.
 
 2. **Subtraction (`-=`)**:
+   - ```c
+     // Subtraction
+     x = x - 2;  // Traditional subtraction
+     x -= 2;     // Augmented subtraction
+     printf("%d\n", x); // Output: 10
+     ```
    - `x = x - 2;` subtracts 2 from `x`.
    - `x -= 2;` is the shorthand version.
 
 3. **Multiplication (`*=`)**:
+   - ```c
+     // Multiplication
+     x = x * 2;  // Traditional multiplication
+     x *= 2;     // Augmented multiplication
+     printf("%d\n", x); // Output: 20
+     ```
    - `x = x * 2;` multiplies `x` by 2.
    - `x *= 2;` simplifies this operation.
 
 4. **Division (`/=`)**:
+   - ```c
+     // Division
+     x = x / 2;  // Traditional division
+     x /= 2;     // Augmented division
+     printf("%d\n", x); // Output: 10
+     ```
    - `x = x / 2;` divides `x` by 2.
    - `x /= 2;` is the concise form.
 
 5. **Modulus (`%=`)**:
+   - ```c
+     // Modulus
+     x = x % 2;  // Traditional modulus
+     x %= 2;     // Augmented modulus
+     printf("%d\n", x); // Output: 0
+     ```
    - `x = x % 2;` gives the remainder when `x` is divided by 2.
    - `x %= 2;` is the shorthand notation.
 
