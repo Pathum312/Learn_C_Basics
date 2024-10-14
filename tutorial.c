@@ -1,34 +1,21 @@
 #include <stdio.h>
+#include <math.h>
+
+double square(int value) {
+    return pow(value, 2);
+}
+
+void print_hello() {
+    printf("\nHello!!!\n");
+}
 
 int main() {
-    // Switch Statements
+    // Functions
 
-    char grade;
+    double A = square(8);
+    printf("Answer: %.1lf", A);
 
-    printf("\nEnter your grade: ");
-    scanf("%c", &grade);
-
-    switch (grade)
-    {
-        case 'A':
-            printf("Pefect!");
-            break;
-        case 'B':
-            printf("Very Good!");
-            break;
-        case 'C':
-            printf("Okay!");
-            break;
-        case 'D':
-            printf("Better than F!");
-            break;
-        case 'F':
-            printf("FAILED!");
-            break;
-        default:
-            printf("Only enter valid grades!");
-            break;
-    }
+    print_hello();
 
     return 0;
 }
