@@ -1,37 +1,22 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
-    /*
-    Augmented Assignment Operators -
-        Used to replace a statement, where an operator takes a
-        variable as one of its arguments and,
-        then assigns the result back to the same variable.
-        example:
-            x = x + 1
-            x+ = 1
-    */
+    // User Inputs
 
-    int x = 10;
+    char name[25]; // 25 Bytes
+    int age;
 
-    x = x + 2; // + Statement
-    x += 2; // Augmented + statment
-    printf("%d\n", x);
+    printf("\nWhat is your name? "); // Name prompt
+    // scanf("%s", &name); Doesn't include the whitespaces entered
+    fgets(name, 25, stdin); // Gets the entire string input including the whitespaces
+    name[strlen(name) - 1] = '\0'; // Formats the string input
 
-    x = x - 2; // - Statement
-    x -= 2; // Augmented - statment
-    printf("%d\n", x);
+    printf("\nWhat is your age? "); // Age prompt
+    scanf("%d", &age);
 
-    x = x * 2; // * Statement
-    x *= 2; // Augmented * statment
-    printf("%d\n", x);
-
-    x = x / 2; // / Statement
-    x /= 2; // Augmented / statment
-    printf("%d\n", x);
-
-    x = x % 2; // % Statement
-    x %= 2; // Augmented % statment
-    printf("%d\n", x);
+    printf("\nHello %s.", name);
+    printf("\nYou are %d years old.", age);
 
     return 0;
 }
