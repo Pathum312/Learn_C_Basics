@@ -1,22 +1,33 @@
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    // IF Statments
+    // Switch Statements
 
-    int age;
+    char grade;
 
-    printf("\nEnter your age: ");
-    scanf("%d", &age);
+    printf("\nEnter your grade: ");
+    scanf("%c", &grade);
 
-    if (age > 18) {
-        printf("\nYou have just signed up!");
-    }
-    else if (age < 0) {
-        printf("\nYou cannot sign up, you are not born yet!");
-    }
-    else {
-        printf("\nYou cannot sign up for another %d years!", 18 - age);
+    switch (grade)
+    {
+        case 'A':
+            printf("Pefect!");
+            break;
+        case 'B':
+            printf("Very Good!");
+            break;
+        case 'C':
+            printf("Okay!");
+            break;
+        case 'D':
+            printf("Better than F!");
+            break;
+        case 'F':
+            printf("FAILED!");
+            break;
+        default:
+            printf("Only enter valid grades!");
+            break;
     }
 
     return 0;
