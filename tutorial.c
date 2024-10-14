@@ -1,39 +1,37 @@
 #include <stdio.h>
 
 int main() {
-    // Arithmetic Operators
+    /*
+    Augmented Assignment Operators -
+        Used to replace a statement, where an operator takes a
+        variable as one of its arguments and,
+        then assigns the result back to the same variable.
+        example:
+            x = x + 1
+            x+ = 1
+    */
 
-    int x = 5;
-    int y = 2;
-    int z;
+    int x = 10;
 
-    // + (Addition)
-    z = x + y;
-    printf("%d + %d = %d\n", x, y, z);
+    x = x + 2; // + Statement
+    x += 2; // Augmented + statment
+    printf("%d\n", x);
 
-    // - (Substraction)
-    z = x - y;
-    printf("%d - %d = %d\n", x, y, z);
+    x = x - 2; // - Statement
+    x -= 2; // Augmented - statment
+    printf("%d\n", x);
 
-    // * (Multiplication)
-    z = x * y;
-    printf("%d * %d = %d\n", x, y, z);
+    x = x * 2; // * Statement
+    x *= 2; // Augmented * statment
+    printf("%d\n", x);
 
-    // / (Division)
-    float ans = x / (float)y;
-    printf("%d / %d = %.1f\n", x, y, ans);
+    x = x / 2; // / Statement
+    x /= 2; // Augmented / statment
+    printf("%d\n", x);
 
-    // % (Modules)
-    z = x % y;
-    printf("%d mod %d = %d\n", x, y, z);
-
-    // ++ Increment
-    x++;
-    printf("x++ = %d\n", x);
-
-    // -- Decrement
-    y--;
-    printf("y-- = %d\n", y);
+    x = x % 2; // % Statement
+    x %= 2; // Augmented % statment
+    printf("%d\n", x);
 
     return 0;
 }
