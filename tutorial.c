@@ -1,22 +1,44 @@
 #include <stdio.h>
-#include <string.h>
+#include <math.h>
 
 int main() {
-    // User Inputs
+    // Math Functions
 
-    char name[25]; // 25 Bytes
-    int age;
+    // Square root
+    double A = sqrt(9);
+    printf("%lf\n", A);
 
-    printf("\nWhat is your name? "); // Name prompt
-    // scanf("%s", &name); Doesn't include the whitespaces entered
-    fgets(name, 25, stdin); // Gets the entire string input including the whitespaces
-    name[strlen(name) - 1] = '\0'; // Formats the string input
+    // Power of
+    double B = pow(2, 4);
+    printf("%lf\n", B);
 
-    printf("\nWhat is your age? "); // Age prompt
-    scanf("%d", &age);
+    // Round off
+    int C = round(3.14);
+    printf("%d\n", C);
 
-    printf("\nHello %s.", name);
-    printf("\nYou are %d years old.", age);
+    // Round up
+    int D = ceil(3.14);
+    printf("%d\n", D);
+
+    // Round down
+    int E = floor(3.14);
+    printf("%d\n", E);
+
+    // Log
+    double G = log(3);
+    printf("%lf\n", G);
+
+    // SIN
+    double H = sin(45);
+    printf("%lf\n", H);
+
+    // COS
+    double I = cos(45);
+    printf("%lf\n", I);
+
+    // TAN
+    double J = tan(45);
+    printf("%lf\n", J);
 
     return 0;
 }
