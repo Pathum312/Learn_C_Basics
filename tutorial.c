@@ -1,21 +1,18 @@
 #include <stdio.h>
 #include <math.h>
 
-double square(int value) {
-    return pow(value, 2);
+int findMax(int x, int y)
+{
+    return (x > y) ? x : y;
 }
 
-void print_hello() {
-    printf("\nHello!!!\n");
-}
+int main()
+{
+    // Ternary Operators - if/else statement shortcut
+    // (condition) ? value if true : value if false
 
-int main() {
-    // Functions
-
-    double A = square(8);
-    printf("Answer: %.1lf", A);
-
-    print_hello();
+    int max = findMax(3, 4);
+    printf("%d", max);
 
     return 0;
 }
